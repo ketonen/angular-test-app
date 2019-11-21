@@ -1,0 +1,14 @@
+<mat-nav-list>
+    <mat-list-item *ngFor="let product of products">
+        <div class="product-name">{{product.name}}</div>
+        <div class="right">
+            <button mat-button>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="add(product.name)">add</mat-icon>
+            </button>
+            <div class="product-count">{{product.count}}</div>
+            <button mat-button>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="remove(product.name)">remove</mat-icon>
+            </button>
+        </div>
+    </mat-list-item>
+</mat-nav-list>

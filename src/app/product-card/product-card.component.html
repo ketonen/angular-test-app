@@ -1,0 +1,11 @@
+<mat-card class="product-card">
+    <mat-card-header>
+        <mat-card-title>{{name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-md-image src="../assets/{{image}}">
+    <mat-card-actions fxLayoutAlign="end end">
+        <button mat-button (click)="addClick()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">add_shopping_cart</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>
